@@ -18,7 +18,8 @@ import org.springframework.security.web.authentication.WebAuthenticationDetailsS
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-@  //indica que esta clase es un componente de Spring, lo que significa que Spring manejará su ciclo de vida y puede inyectar otras dependencias en ella.
+@Component
+//indica que esta clase es un componente de Spring, lo que significa que Spring manejará su ciclo de vida y puede inyectar otras dependencias en ella.
 @RequiredArgsConstructor //es de Lombok y genera un constructor que toma todos los campos marcados con @NonNull o final y los inicializa.
 public class    JwtAuthenticationFilter extends OncePerRequestFilter {
     @Autowired
